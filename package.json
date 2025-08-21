@@ -6,7 +6,7 @@
   "contributors": [
     "nckrtl"
   ],
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "jsdelivr": "dist/chartjs-plugin-streaming.min.js",
   "unpkg": "dist/chartjs-plugin-streaming.min.js",

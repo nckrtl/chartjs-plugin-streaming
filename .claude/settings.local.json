@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.chartjs.org)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint)",
+      "Bash(npm:*)",
+      "Bash(rm:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

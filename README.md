@@ -22,6 +22,29 @@ This package (`@nckrtl/chartjs-plugin-streaming`) v3.x requires Chart.js 4.0.0 o
 npm install @nckrtl/chartjs-plugin-streaming
 ```
 
+## Usage
+
+### ESM (ES Modules)
+
+When using ES modules, you need to register both the plugin and the scale:
+
+```javascript
+import Chart from 'chart.js/auto';
+import {StreamingPlugin, RealTimeScale} from '@nckrtl/chartjs-plugin-streaming';
+
+// IMPORTANT: Register both the plugin and the scale
+Chart.register(StreamingPlugin, RealTimeScale);
+```
+
+### UMD (Script Tags)
+
+When using script tags, the plugin automatically registers itself:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@nckrtl/chartjs-plugin-streaming@3.0.0"></script>
+```
+
 ## Documentation
 
 - [Introduction](https://nagix.github.io/chartjs-plugin-streaming/master/guide/)
