@@ -7,6 +7,7 @@ const pkg = require('./package.json');
 
 const input = 'src/index.js';
 const inputESM = 'src/index.esm.js';
+const outputName = 'chartjs-plugin-streaming';
 
 const banner = `/*!
  * ${pkg.name} v${pkg.version}
@@ -28,7 +29,7 @@ module.exports = [
     ],
     output: {
       name: 'ChartStreaming',
-      file: `dist/${pkg.name}.js`,
+      file: `dist/${outputName}.js`,
       banner,
       format: 'umd',
       indent: false,
@@ -55,7 +56,7 @@ module.exports = [
     ],
     output: {
       name: 'ChartStreaming',
-      file: `dist/${pkg.name}.min.js`,
+      file: `dist/${outputName}.min.js`,
       format: 'umd',
       indent: false,
       globals: {

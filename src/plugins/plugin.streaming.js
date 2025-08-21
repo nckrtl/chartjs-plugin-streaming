@@ -181,7 +181,7 @@ export default {
     }
   },
 
-  destroy(chart) {
+  afterDestroy(chart) {
     const {scales, $streaming: streaming, tooltip} = chart;
     const {canvas, mouseEventListener} = streaming;
 
